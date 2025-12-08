@@ -33,6 +33,7 @@ git push -u origin feature/multi-language
 git checkout develop
 git pull origin develop  # ดึงโค้ดล่าสุดเผื่อมีใครแก้อะไร (ถ้าทำคนเดียวข้ามได้)
 git merge feature/multi-language
+git push origin develop
 ```
 
 ## เตรียมขึ้น Production (Merge to Main)

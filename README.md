@@ -1,25 +1,8 @@
-## 1. เข้าไปในโฟลเดอร์โปรเจกต์
-```
-cd my-payload-app
-```
-
-## 2. เริ่มต้น git (ถ้า create-payload-app ทำให้แล้ว ข้ามไปข้อ 3)
+## First push main
 ```
 git init
-```
-
-## 3. Add ไฟล์ทั้งหมด
-```
 git add .
-```
-
-## 4. Commit ครั้งแรก
-```
-git commit -m "Initial commit: Payload CMS scaffold"
-```
-
-## 5. Push ขึ้น Main
-```
+git commit -m "Initial commit"
 git branch -M main
 git remote add origin git@github.com:kreangsak-dev/git-flow-command.git
 git push -u origin main

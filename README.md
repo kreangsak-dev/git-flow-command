@@ -82,3 +82,17 @@ Develop: แก้ไฟล์ package.json เปลี่ยนเลขเว
 Main: Merge เข้ามา
 Main: สั่ง git tag แล้ว Push
 ```
+
+
+## คำสั่ง git branch 
+### 1. ลบที่เครื่อง Dev (Local)
+```
+git branch -d feature/multi-language
+Note: ถ้า Git แจ้งเตือนว่ายังไม่ได้ Merge (แต่คุณอยากลบจริงๆ) ให้เปลี่ยน -d เป็น -D (ตัวใหญ่) เพื่อบังคับลบครับ
+```
+
+### 1. ลบที่เซิร์ฟเวอร์ (Remote)
+ใช้เมื่อเราปิดจอบงานนั้นแล้ว และอยากเคลียร์บน GitHub ด้วย เพื่อไม่ให้ทีมสับสน
+```
+git push origin --delete feature/multi-language
+```

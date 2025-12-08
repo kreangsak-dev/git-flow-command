@@ -22,6 +22,11 @@ git push -u origin develop
 ```
 git checkout -b feature/multi-language
 ```
+```
+git add .
+git commit -m "Setup localization config"
+git push -u origin feature/multi-language
+```
 
 ## รวมโค้ดกลับ (Merge & Pull Request)
 ```

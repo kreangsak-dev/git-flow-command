@@ -89,6 +89,20 @@ Main: Merge เข้ามา
 Main: สั่ง git tag แล้ว Push
 ```
 
+## การ dev feature ต่อ
+### แบบที่ 1 เก็บ history ครบ เหมาะกับการทำงานหลายคน
+```
+git checkout feature/xxxx
+git fetch origin
+git merge origin develop
+```
+### แบบที่ 2 history สะอาดเริ่มใหม่ เหมาะสำหรับ dev คนเดียว
+```
+git checkout feature/xxxx
+git fetch origin
+git rebase origin develop
+```
+rebase ถ้าใช้หลายคนแล้ว push มีปัญหา ต้องใช้ git push --force
 
 ## คำสั่ง git branch 
 ### 1. ลบที่เครื่อง Dev (Local)

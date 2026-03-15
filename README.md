@@ -116,3 +116,10 @@ Note: ถ้า Git แจ้งเตือนว่ายังไม่ได
 ```
 git push origin --delete feature/multi-language
 ```
+
+### 1. ลบ Worktree
+```
+git worktree remove --force "D:/36. React19/nurse-table-v4/.claude/worktrees/infallible-banzai"
+git worktree prune
+git branch -D claude/infallible-banzai
+```
